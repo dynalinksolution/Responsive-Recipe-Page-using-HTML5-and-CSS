@@ -14,8 +14,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Overview
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution Link](https://github.com/dynalinksolution/Responsive-Recipe-Page-using-HTML5-and-CSS)
+- Live Site URL: [Live View](https://dynalinksolution.github.io/Responsive-Recipe-Page-using-HTML5-and-CSS)
 
 ## My process
 

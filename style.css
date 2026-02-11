@@ -1,0 +1,163 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p,
+li {
+  font-size: 1em;
+  font-family: "outfit", serif;
+  color: var(--stone-600);
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section {
+  padding: 2em;
+}
+h1 {
+  font-family: "Young Serif", serif;
+  /* font-weight: 400; */
+  color: var(--stone-900);
+}
+h2 {
+  font-family: "Young Serif", serif;
+  color: var(--brown-800);
+}
+h3 {
+  font-family: "outfit", serif;
+  color: var(--stone-600);
+  font-weight: 400;
+}
+.hero-txts p {
+  font-weight: 18.6em;
+  margin: 2em 0;
+}
+.prep-time {
+  background: var(--rose-50);
+  padding: 1.5em;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+.prep-time p {
+  color: var(--rose-800);
+  font-weight: 700;
+}
+.prep-time ul {
+  padding: 1em 2em 0 1em;
+}
+.prep-time ul li {
+  margin-bottom: 0.8em;
+  padding: 0 1em;
+}
+.prep-time ul li span {
+  font-weight: 700;
+}
+.ingredients,
+.instructions {
+  border-bottom: 0.16em solid var(--stone-150);
+  margin-bottom: 2em;
+}
+.ingredients ul {
+  padding: 1em;
+}
+.ingredients ul li {
+  margin-bottom: 0.8em;
+  padding: 0 1em;
+}
+.instructions li span {
+  font-weight: 700;
+}
+.instructions ol {
+  padding: 1em;
+}
+.instructions ol li {
+  padding: 0 1em;
+  margin-bottom: 1em;
+  counter-increment: list;
+  list-style-type: none;
+}
+.instructions ol li::before {
+  content: counter(list);
+  color: var(--brown-800);
+  font-weight: 700;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: -2em;
+  margin-right: 1.5em;
+}
+.nutri-txt {
+  margin: 1.5em 0;
+}
+.nutrient {
+  display: flex;
+  /* gap: 2em; */
+  width: 100%;
+  justify-content: space-between;
+  padding: 1em 5em 1em 2em;
+  border-bottom: 0.16em solid var(--stone-150);
+}
+.nutrient p {
+  font-weight: 700;
+  color: var(--brown-800);
+}
+.nutrient div {
+  width: 3.2em;
+}
+.fat {
+  border: none;
+}
+
+
+
+@media (max-width: 90em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--rose-50);
+    padding: 6em 0;
+  }
+  main {
+    background: var(--white);
+    width: 50vw;
+    border-radius: 2em;
+  }
+  header {
+      padding: 2em 2em 0 2em;
+  }
+  header img {
+      border-radius: 1em;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 657px) {
+    body {
+        padding: unset !important;
+        display: block;
+    }
+    main {
+        width: 100vw;
+        border-radius: unset;
+    }
+     header {
+      padding: unset;
+    }
+    header img {
+        border-radius: unset;
+    }
+}
